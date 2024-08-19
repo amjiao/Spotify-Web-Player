@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href= "{{ url_for('static', filename='style/style.css') }}" rel="stylesheet"/>
+  <title>song guess</title>
+</head>
+<body>
+  <div class="watermark">
+    <h1>track id</h1>
+    <h3>a song to person matching game</h3>
+  </div>
+
+  <div class="title">
+    <h1>search</h1>
+  </div>
+
+  </div>
+  
+    <form id="searchForm" action="/search">
+      <input type ="text" name="spsearch" id="spsearch" placeholder="search spotify...">
+      <button type="submit">search</button>
+    </form>
+
+    <form id="selectTrack" action="/webplayer" method="post">
+      <div class="radio">
+        <input type="radio" id="r1" name="track" value={{uri1}}>
+        <label for="r1">{{r1}}</label><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="r2" name="track" value={{uri2}}>
+        <label for="r2">{{r2}}</label><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="r3" name="track" value={{uri3}}>
+        <label for="r3">{{r3}}</label><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="r4" name="track" value={{uri4}}>
+        <label for="r4">{{r4}}</label><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="r5" name="track" value={{uri5}}>
+        <label for="r5">{{r5}}</label><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="r6" name="track" value={{uri6}}>
+        <label for="r6">{{r6}}</label><br>
+      </div>
+      <div class="radio">
+        <input type="radio" id="r7" name="track" value={{uri7}}>
+        <label for="r7">{{ r7 }}</label><br>
+      </div>
+    <button type="submit">submit</button>
+    </form> 
+  
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+
+
+  
+</body>
+</html>

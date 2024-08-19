@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #232723;
+  --green: #62d089;
+  --mint: #e1ece3;
+  --dark-green: #457e59;
+  --gray: #a8b2a8;
+}
+
+body{
+  height: 100vh;
+  display: block;
+  align-items: center;
+  text-align: center;
+  background: var(--mint);
+}
+
+.title h1{
+  font-size: 48px;
+}
+
+.title{
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.container{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.login button{
+  margin: 0 auto;
+  padding: 25px;
+  background: var(--green);
+  color: var(--dark);
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.watermark{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  color: var(--gray);
+}
+
+input[type=text]{
+  width: 400px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+button{
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: var(--green);
+  color: var(--dark);
+}
+
+.playerElement{
+  padding: 15px;
+  width: 40vw;
+}
+
+.player-list{
+  padding:15px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.player-list li{
+  padding: 10px;
+  list-style-type: none;
+}
+
+form[id="searchForm"]{
+  padding:15px;
+}
+
+input[type=radio]{
+  padding: 20px;
+}
+
+.radio{
+  padding: 10px;
+}
