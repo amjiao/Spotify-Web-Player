@@ -1,0 +1,3 @@
+SPOTIFY_CLIENT = 'your client id'
+SPOTIFY_SECRET = 'your client secret'
+SPOTIFY_REDIRECT_URI = 'http://localhost:5000/callback'
